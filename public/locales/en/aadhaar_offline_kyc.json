@@ -1,0 +1,8 @@
+{
+  "aadhaar_offline_kyc": "Aadhaar Offline KYC",
+  "upload_from_device": "Upload from device",
+  "zip_file_should_not_be_more_that_3_days_old": "Zip file should not be more that 3 days old",
+  "don’t_have_an_aadhaar_xml_file?": "Don’t have an Aadhaar XML file?",
+  "generate_now": "Generate Now",
+  "proceed": "Proceed"
+}

@@ -1,0 +1,8 @@
+{
+  "aadhaar_offline_kyc": "ஆதார் ஆஃப்லைன் KYC",
+  "upload_from_device": "சாதனத்திலிருந்து பதிவேற்றவும்",
+  "zip_file_should_not_be_more_that_3_days_old": "ஜிப் கோப்பு 3 நாட்களுக்கு மேல் பழையதாக இருக்கக்கூடாது",
+  "don’t_have_an_aadhaar_xml_file?": "ஆதார் எக்ஸ்எம்எல் கோப்பு இல்லையா?",
+  "generate_now": "இப்போது உருவாக்கவும்",
+  "proceed": "தொடரவும்"
+}

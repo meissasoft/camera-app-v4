@@ -1,0 +1,10 @@
+{
+  "mobile_verification": "மொபைல் சரிபார்ப்பு",
+  "verification_code": "சரிபார்ப்பு குறியீடு",
+  "please_enter_the_verification_code_we_sent_to_your_phone_number": "உங்கள் தொலைபேசி எண்ணுக்கு நாங்கள் அனுப்பிய சரிபார்ப்புக் குறியீட்டை உள்ளிடவும்",
+  "i_did'nt_receive_a_code": "நான் குறியீட்டைப் பெறவில்லை",
+  "resend": "மீண்டும் அனுப்பு",
+  "proceed": "தொடரவும்",
+  "enter_share_code": "பங்குக் குறியீட்டை உள்ளிடவும்",
+  "create_a_6_digit_code_to_secure_your_offline_ekyc": "உங்கள் ஆஃப்லைன் eKYCஐப் பாதுகாக்க 6 இலக்கக் குறியீட்டை உருவாக்கவும்"
+}

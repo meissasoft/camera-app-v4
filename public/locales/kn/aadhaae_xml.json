@@ -1,0 +1,14 @@
+{
+  "aadhaar_xml": "ಆಧಾರ್ XML",
+  "do_you_have_an_aadhaar_xml_file?": "ನಿಮ್ಮ ಬಳಿ ಆಧಾರ್ XML ಫೈಲ್ ಇದೆಯೇ?",
+  "yes": "ಹೌದು",
+  "no": "ಸಂ",
+  "continue": "ಮುಂದುವರಿಸಿ",
+  "user_consent": "ಬಳಕೆದಾರರ ಸಮ್ಮತಿ",
+  "by_clicking_on_agree_you_hereby:": "'ಸಮ್ಮತಿಸಿ' ಕ್ಲಿಕ್ ಮಾಡುವ ಮೂಲಕ, ನೀವು ಇಲ್ಲಿ:",
+  "acknowledge_the_request_made_by_syntizen_technologies_private_limited_to_provide_personal_details.": "ವೈಯಕ್ತಿಕ ವಿವರಗಳನ್ನು ಒದಗಿಸಲು ಸಿಂಟಿಜೆನ್ ಟೆಕ್ನಾಲಜೀಸ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್ ಮಾಡಿದ ವಿನಂತಿಯನ್ನು ಅಂಗೀಕರಿಸಿ.",
+  "provide_my_unconditional_concent_to_access_copy_and_store_all_information_therein_by_sharing_the_inofrmation.": "ಮಾಹಿತಿಯನ್ನು ಹಂಚಿಕೊಳ್ಳುವ ಮೂಲಕ ಎಲ್ಲಾ ಮಾಹಿತಿಯನ್ನು ಪ್ರವೇಶಿಸಲು, ನಕಲಿಸಲು ಮತ್ತು ಸಂಗ್ರಹಿಸಲು ನನ್ನ ಬೇಷರತ್ತಾದ ಏಕಾಗ್ರತೆಯನ್ನು ಒದಗಿಸಿ.",
+  "also_undertake_i/we_are_authorised_to_do_so_on_behalf_of_the_requestee_organisation_and_tkae_sole_and_complete_responsibilitity_for_the_same.": "ವಿನಂತಿಸಿದ ಸಂಸ್ಥೆಯ ಪರವಾಗಿ ನಾನು/ನಾವು ಹಾಗೆ ಮಾಡಲು ಅಧಿಕಾರ ಹೊಂದಿದ್ದೇವೆ ಮತ್ತು ಅದರ ಏಕೈಕ ಮತ್ತು ಸಂಪೂರ್ಣ ಜವಾಬ್ದಾರಿಯನ್ನು ಸಹ ಕೈಗೊಳ್ಳುತ್ತೇವೆ.",
+  "disagree": "ಒಪ್ಪುವುದಿಲ್ಲ",
+  "agree": "ಒಪ್ಪುತ್ತೇನೆ"
+}

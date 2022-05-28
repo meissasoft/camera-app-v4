@@ -1,0 +1,14 @@
+{
+  "aadhaar_xml": "ఆధార్ XML",
+  "do_you_have_an_aadhaar_xml_file?": "మీ వద్ద ఆధార్ XML ఫైల్ ఉందా?",
+  "yes": "అవును",
+  "no": "నం",
+  "continue": "కొనసాగించు",
+  "user_consent": "వినియోగదారు సమ్మతి",
+  "by_clicking_on_agree_you_hereby:": "‘అంగీకరించు’పై క్లిక్ చేయడం ద్వారా, మీరు దీని ద్వారా:",
+  "acknowledge_the_request_made_by_syntizen_technologies_private_limited_to_provide_personal_details.": "వ్యక్తిగత వివరాలను అందించడానికి సింటైజెన్ టెక్నాలజీస్ ప్రైవేట్ లిమిటెడ్ చేసిన అభ్యర్థనను అంగీకరించండి.",
+  "provide_my_unconditional_concent_to_access_copy_and_store_all_information_therein_by_sharing_the_inofrmation.": "సమాచారాన్ని పంచుకోవడం ద్వారా మొత్తం సమాచారాన్ని యాక్సెస్ చేయడానికి, కాపీ చేయడానికి మరియు నిల్వ చేయడానికి నా షరతులు లేని ఏకాగ్రతను అందించండి.",
+  "also_undertake_i/we_are_authorised_to_do_so_on_behalf_of_the_requestee_organisation_and_tkae_sole_and_complete_responsibilitity_for_the_same.": "అభ్యర్థించిన సంస్థ తరపున అలా చేయడానికి నేను/మాకు అధికారం ఉంది మరియు దాని కోసం పూర్తి బాధ్యతను కూడా తీసుకుంటాము.",
+  "disagree": "అంగీకరించలేదు",
+  "agree": "అంగీకరిస్తున్నారు"
+}

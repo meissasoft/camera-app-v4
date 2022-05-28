@@ -1,0 +1,8 @@
+{
+  "aadhaar_offline_kyc": "ആധാർ ഓഫ്‌ലൈൻ കെവൈസി",
+  "upload_from_device": "ഉപകരണത്തിൽ നിന്ന് അപ്‌ലോഡ് ചെയ്യുക",
+  "zip_file_should_not_be_more_that_3_days_old": "Zip ഫയൽ 3 ദിവസത്തിൽ കൂടുതൽ പഴക്കമുള്ളതായിരിക്കരുത്",
+  "don’t_have_an_aadhaar_xml_file?": "ഒരു ആധാർ XML ഫയൽ ഇല്ലേ?",
+  "generate_now": "ഇപ്പോൾ ജനറേറ്റ് ചെയ്യുക",
+  "proceed": "തുടരുക"
+}

@@ -1,0 +1,10 @@
+{
+  "mobile_verification": "మొబైల్ ధృవీకరణ",
+  "verification_code": "ధృవీకరణ కోడ్",
+  "please_enter_the_verification_code_we_sent_to_your_phone_number": "దయచేసి మేము మీ ఫోన్ నంబర్‌కు పంపిన ధృవీకరణ కోడ్‌ను నమోదు చేయండి",
+  "i_did'nt_receive_a_code": "నేను కోడ్‌ని అందుకోలేదు",
+  "resend": "మళ్లీ పంపండి",
+  "proceed": "కొనసాగండి",
+  "enter_share_code": "షేర్ కోడ్‌ని నమోదు చేయండి",
+  "create_a_6_digit_code_to_secure_your_offline_ekyc": "మీ ఆఫ్‌లైన్ eKYCని సురక్షితంగా ఉంచడానికి 6 అంకెల కోడ్‌ను సృష్టించండి"
+}

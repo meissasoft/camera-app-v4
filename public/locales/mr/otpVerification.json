@@ -1,0 +1,10 @@
+{
+  "mobile_verification": "मोबाइल सत्यापन",
+  "verification_code": "सत्यापन कोड",
+  "please_enter_the_verification_code_we_sent_to_your_phone_number": "कृपया आम्ही तुमच्या फोन नंबरवर पाठवलेला पडताळणी कोड एंटर करा",
+  "i_did'nt_receive_a_code": "मला कोड मिळाला नाही",
+  "resend": "पुन्हा पाठवा",
+  "proceed": "पुढे जा",
+  "enter_share_code": "शेअर कोड एंटर करा",
+  "create_a_6_digit_code_to_secure_your_offline_ekyc": "तुमचा ऑफलाइन eKYC सुरक्षित करण्यासाठी 6 अंकी कोड तयार करा"
+}

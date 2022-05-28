@@ -1,0 +1,10 @@
+{
+  "mobile_verification": "Mobile Verification",
+  "verification_code": "Verification Code",
+  "please_enter_the_verification_code_we_sent_to_your_phone_number": "Please enter the verification code we sent to your phone number",
+  "i_did'nt_receive_a_code": "I did'nt receive a code",
+  "resend": "Resend",
+  "proceed": "Proceed",
+  "enter_share_code": "Enter Share Code",
+  "create_a_6_digit_code_to_secure_your_offline_ekyc": "Create a 6 digit code to secure your offline eKYC"
+}

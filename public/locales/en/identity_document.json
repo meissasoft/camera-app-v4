@@ -1,0 +1,13 @@
+{
+  "identity_document_verification": "Identity Document Verification",
+  "select_a_documemt": "Select a documemt",
+  "you_will_take_a_picture_of_it_in_next_steps": "You will take a picture of it in next steps",
+  "adhaar_card": "Adhaar Card",
+  "passport": "Passport",
+  "licence": "Driving Licence",
+  "voter_id": "Voter ID",
+  "video_kyc_would_like_to_access_the_camera": "“Video KYC” Would Like to Access the Camera",
+  "required_for_document_and_facial_capture": "Required for document and facial capture",
+  "don't_allow": "Don't allow",
+  "ok": "OK"
+}

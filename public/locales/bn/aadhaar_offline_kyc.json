@@ -1,0 +1,8 @@
+{
+  "aadhaar_offline_kyc": "আধার অফলাইন কেওয়াইসি",
+  "upload_from_device": "ডিভাইস থেকে আপলোড করুন",
+  "zip_file_should_not_be_more_that_3_days_old": "জিপ ফাইলের বয়স 3 দিনের বেশি হওয়া উচিত নয়",
+  "don’t_have_an_aadhaar_xml_file?": "একটি আধার XML ফাইল নেই?",
+  "generate_now": "এখনই তৈরি করুন",
+  "proceed": "এগিয়ে যান"
+}

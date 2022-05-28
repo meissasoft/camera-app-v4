@@ -1,0 +1,8 @@
+{
+  "aadhaar_offline_kyc": "आधार ऑफलाइन केवाईसी",
+  "upload_from_device": "डिवाइस से अपलोड करें",
+  "zip_file_should_not_be_more_that_3_days_old": "ज़िप फ़ाइल 3 दिन से अधिक पुरानी नहीं होनी चाहिए",
+  "don’t_have_an_aadhaar_xml_file?": "आधार एक्सएमएल फाइल नहीं है?",
+  "generate_now": "अभी उत्पन्न करें",
+  "proceed": "आगे बढ़ना"
+}

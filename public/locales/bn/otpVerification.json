@@ -1,0 +1,10 @@
+{
+  "mobile_verification": "মোবাইল ভেরিফিকেশন",
+  "verification_code": "যাচাইকরণ কোড",
+  "please_enter_the_verification_code_we_sent_to_your_phone_number": "আমরা আপনার ফোন নম্বরে যে যাচাইকরণ কোডটি পাঠিয়েছি দয়া করে সেটি লিখুন",
+  "i_did'nt_receive_a_code": "আমি একটি কোড পাইনি",
+  "resend": "আবার পাঠান",
+  "proceed": "এগিয়ে যান",
+  "enter_share_code": "শেয়ার কোড লিখুন",
+  "create_a_6_digit_code_to_secure_your_offline_ekyc": "আপনার অফলাইন eKYC সুরক্ষিত করতে একটি 6 সংখ্যার কোড তৈরি করুন"
+}

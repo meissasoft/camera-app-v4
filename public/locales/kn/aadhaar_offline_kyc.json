@@ -1,0 +1,8 @@
+{
+  "aadhaar_offline_kyc": "ಆಧಾರ್ ಆಫ್‌ಲೈನ್ KYC",
+  "upload_from_device": "ಸಾಧನದಿಂದ ಅಪ್ಲೋಡ್ ಮಾಡಿ",
+  "zip_file_should_not_be_more_that_3_days_old": "ಜಿಪ್ ಫೈಲ್ 3 ದಿನಗಳಿಗಿಂತ ಹೆಚ್ಚು ಹಳೆಯದಾಗಿರಬಾರದು",
+  "don’t_have_an_aadhaar_xml_file?": "ಆಧಾರ್ XML ಫೈಲ್ ಇಲ್ಲವೇ?",
+  "generate_now": "ಈಗ ರಚಿಸಿ",
+  "proceed": "ಮುಂದುವರೆಯಲು"
+}

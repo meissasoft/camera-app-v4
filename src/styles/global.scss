@@ -1,0 +1,26 @@
+@import '~react-phone-input-2/lib/bootstrap.css';
+
+.flex {
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Proxima Nova Lt' !important;
+  // background-color: #f7f9fa66 !important;
+}
+
+#__next {
+  height: 100%;
+}

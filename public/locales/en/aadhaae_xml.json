@@ -1,0 +1,14 @@
+{
+  "aadhaar_xml": "aadhaar_xml",
+  "do_you_have_an_aadhaar_xml_file?": "Do you have an aadhaar xml file?",
+  "yes": "Yes",
+  "no": "No",
+  "continue": "continue",
+  "user_consent": "User Consent",
+  "by_clicking_on_agree_you_hereby:": "By clicking on ‘Agree’, you hereby:",
+  "acknowledge_the_request_made_by_syntizen_technologies_private_limited_to_provide_personal_details.": "Acknowledge the request made by Syntizen technologies private limited to provide personal details. ",
+  "provide_my_unconditional_concent_to_access_copy_and_store_all_information_therein_by_sharing_the_inofrmation.": "Provide my unconditional concent to access, copy and store all information therein by sharing the inofrmation.",
+  "also_undertake_i/we_are_authorised_to_do_so_on_behalf_of_the_requestee_organisation_and_tkae_sole_and_complete_responsibilitity_for_the_same.": "Also undertake I/We are authorised to do so on behalf of the requestee organisation and tkae sole and  complete responsibilitity for the same.",
+  "disagree": "Disagree",
+  "agree": "Agree"
+}
