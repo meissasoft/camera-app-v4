@@ -1,0 +1,13 @@
+{
+  "fill_the_form": "ఫారమ్ నింపండి",
+  "full_name": "పూర్తి పేరు*",
+  "mobile_number": "మొబైల్ నంబర్",
+  "select_id_documents": "ID పత్రాలను ఎంచుకోండి",
+  "please_select_atleast_2_ID_documents_for_verification": "దయచేసి ధృవీకరణ కోసం కనీసం 2 ID పత్రాలను ఎంచుకోండి",
+  "aadhar_card": "ఆధార్ కార్డ్",
+  "pan_card": "పాన్ కార్డ్",
+  "driving_liscense": "డ్రైవింగ్ లైసెన్సు",
+  "voter_id": "ఓటరు ID",
+  "passport": "పాస్పోర్ట్",
+  "get_kyc": "KYC పొందండి"
+}

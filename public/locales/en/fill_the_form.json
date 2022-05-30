@@ -1,0 +1,13 @@
+{
+  "fill_the_form": "Fill the form",
+  "full_name": "Full Name*",
+  "mobile_number": "Mobile Number",
+  "select_id_documents": "Select ID documents",
+  "please_select_atleast_2_ID_documents_for_verification": "Please select atleast 2 ID documents for verification",
+  "aadhar_card": "Aadhar Card",
+  "pan_card": "PAN Card",
+  "driving_liscense": "Driving Liscense",
+  "voter_id": "Voter ID",
+  "passport": "Passport",
+  "get_kyc": "Get KYC"
+}

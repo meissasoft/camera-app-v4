@@ -28,10 +28,23 @@ export const DivFrontCam = styled.video`
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
   flex-direction: column;
   width: 120px;
   object-fit: cover;
   border: 1.5px solid ${COLORS.WHITE};
   border-radius: 12px;
+`;
+export const TextStyled = styled.div`
+  color: ${COLORS.WHITE_100};
+  font-weight: 600;
+  font-size: 15px;
+  position: absolute;
+  bottom: 30px;
+  padding: 0px 5px;
+  display: flex;
+  gap: 5px;
+  span {
+    margin-top: -2px;
+  }
 `;

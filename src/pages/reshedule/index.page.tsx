@@ -1,20 +1,15 @@
 import { useState } from 'react';
 import router from 'next/router';
-
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-
 import Calendar from 'react-calendar';
 import Button from '@/components/core/Button';
 import Heading from '@/components/core/Header/Header';
-
 import CalendarPrevLabel from '@/assets/svg/calendar_prev_label';
 import CalendarNextLabel from '@/assets/svg/calendar_next_label';
 import TickMark from '@/assets/svg/tick_mark';
-
 import { ArrowBotom } from '@/assets/svg/arrow_bottom';
 import { ArrowTop } from '@/assets/svg/arrow_top';
-
 import 'react-calendar/dist/Calendar.css';
 import {
   DivMain,
@@ -25,12 +20,15 @@ import {
   DefaultOptionDiv,
   OptionsListDiv,
   SingleOptionDiv,
+  LightText,
+  BoldText,
 } from './index.style';
-
+import { DivFooterButton } from '../keeps_things_handy/index.style';
 const Reshedule = () => {
+  const { t } = useTranslation('reschedule');
   const [value, onChange] = useState(new Date());
   const [dropDownOpen, setDropDownOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState('Select a avaliable time Slot');
+  const [selectedOption, setSelectedOption] = useState(`${t('select_a_available_time_slot')}`);
   const [selectOptionIcon, setSelectOptionIcon] = useState<any>(null);
   const AvaliableSlots = [
     {
@@ -54,48 +52,38 @@ const Reshedule = () => {
       endTime: '10:55am',
     },
   ];
-
-  const { t } = useTranslation('otpVerification');
-
   const handleBack = () => {
     router.push('/token_number');
   };
-
   const handleContinue = () => {
     router.push('/initiating_video');
   };
-
   return (
     <DivMain>
       <div>
-        <Heading text={t('Reschedule')} onClick={handleBack} />
-
+        <Heading text={t('reschedule')} onClick={handleBack} />
         <div className="mt-5 text-center">
           <DescriptionDiv>
-            {t('Please select a')} <span className="fw-bold">{t(' date & time ')}</span>
-            {t('to reschedule a video call session with our agent')}
+            <LightText>{t('please_select_a')}</LightText> <BoldText>{t('date_and_time')}</BoldText>
+            <LightText>{t('to_reschedule_a_video_call_session_with_our_agent')}</LightText>
           </DescriptionDiv>
         </div>
-
         <CalendarDiv>
           <Calendar
             onChange={onChange}
             value={value}
             prevLabel={<CalendarPrevLabel />}
             nextLabel={<CalendarNextLabel />}
+            minDate={new Date()}
             className="react-calendar"
-            selectRange={true}
           />
         </CalendarDiv>
-
         <Divider></Divider>
-
         <CustomDropDown>
           <DefaultOptionDiv onClick={() => (dropDownOpen ? setDropDownOpen(false) : setDropDownOpen(true))}>
             <span>{selectedOption}</span>
             <span>{!dropDownOpen ? <ArrowBotom /> : <ArrowTop />}</span>
           </DefaultOptionDiv>
-
           <>
             {dropDownOpen && (
               <OptionsListDiv>
@@ -105,7 +93,7 @@ const Reshedule = () => {
                       key={index}
                       onClick={() => {
                         if (selectOptionIcon === item.id) {
-                          setSelectedOption('Select a avaliable time Slot');
+                          setSelectedOption(`${t('select_a_available_time_slot')}`);
                           setSelectOptionIcon(null);
                         } else {
                           setSelectedOption(`${item.startTime} to ${item.endTime}`);
@@ -126,22 +114,21 @@ const Reshedule = () => {
           </>
         </CustomDropDown>
       </div>
-
-      <Button
-        onClick={handleContinue}
-        className={`my-5 m-auto ${selectOptionIcon === null ? 'confirmDisable' : ''}`}
-        disabled={selectOptionIcon === null ? true : false}
-      >
-        Confirm
-      </Button>
+      <DivFooterButton>
+        <Button
+          onClick={handleContinue}
+          className={` m-auto ${selectOptionIcon === null ? 'confirmDisable' : ''}`}
+          // disabled={selectOptionIcon === null ? true : false}
+        >
+          {t('confirm')}
+        </Button>
+      </DivFooterButton>
     </DivMain>
   );
 };
-
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['otpVerification'])),
+    ...(await serverSideTranslations(locale, ['reschedule'])),
   },
 });
-
 export default Reshedule;

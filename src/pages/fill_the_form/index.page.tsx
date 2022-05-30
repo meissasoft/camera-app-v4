@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 
 import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useState } from 'react';
 import Button from '@/components/core/Button';
 import Header from '@/components/core/Header';
@@ -24,10 +25,10 @@ import {
 import { ILanguage } from './index.types';
 /**
  *
- * @returns AadhaarXml page
+ * @returns fill the form
  */
 const FillTheForm = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('fill_the_form');
   const router = useRouter();
 
   const onClickHeaderIcon = () => {
@@ -36,23 +37,23 @@ const FillTheForm = () => {
 
   const [OptionsList, setOptionList] = useState<ILanguage[]>([
     {
-      label: 'Aadhaar Card',
+      label: t('aadhar_card'),
       checked: false,
     },
     {
-      label: 'PAN Card',
+      label: t('pan_card'),
       checked: false,
     },
     {
-      label: 'Driving Licence',
+      label: t('driving_liscense'),
       checked: false,
     },
     {
-      label: 'Voter ID',
+      label: t('voter_id'),
       checked: false,
     },
     {
-      label: 'Passport',
+      label: t('passport'),
       checked: false,
     },
   ]);
@@ -75,19 +76,19 @@ const FillTheForm = () => {
   };
 
   const onClickHandler = () => {
-    router.push('/digi_locker');
+    router.push('/commence_your_video_kyc');
   };
   return (
     <DivMain>
       <div>
-        <Header text="Fill the form" onClick={onClickHeaderIcon} />
+        <Header text={t('fill_the_form')} onClick={onClickHeaderIcon} />
         <FieldInput
-          placeholder={t('Full name*')}
+          placeholder={t('full_name')}
           name={'mobile'}
           className="my-2 mt-5 m-auto rounded border p-2 loginInput"
         />
         <FieldInput
-          placeholder={t('Mobile Number*')}
+          placeholder={t('mobile_number')}
           name={'mobile'}
           className="my-2 m-auto rounded border p-2 loginInput"
         />
@@ -95,8 +96,8 @@ const FillTheForm = () => {
         <Divider />
 
         <DivForm>
-          <FormHeading>Select ID documents</FormHeading>
-          <FormDescription>Please select atleast 2 ID documents for verification</FormDescription>
+          <FormHeading>{t('select_id_documents')}</FormHeading>
+          <FormDescription>{t('please_select_atleast_2_ID_documents_for_verification')}</FormDescription>
           <Options>
             {OptionsList.map(({ label, checked }, index) => {
               return (
@@ -120,12 +121,18 @@ const FillTheForm = () => {
       <FooterButtonStyle>
         <div className="button-container">
           <Button className="m-auto" onClick={onClickHandler}>
-            Get KYC
+            {t('get_kyc')}
           </Button>
         </div>
       </FooterButtonStyle>
     </DivMain>
   );
 };
+
+export const getStaticProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['fill_the_form'])),
+  },
+});
 
 export default FillTheForm;

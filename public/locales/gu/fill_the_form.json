@@ -1,0 +1,13 @@
+{
+  "fill_the_form": "ફોર્મ ભરો",
+  "full_name": "પૂરું નામ*",
+  "mobile_number": "મોબાઇલ નંબર",
+  "select_id_documents": "ID દસ્તાવેજો પસંદ કરો",
+  "please_select_atleast_2_ID_documents_for_verification": "કૃપા કરીને ચકાસણી માટે ઓછામાં ઓછા 2 ID દસ્તાવેજો પસંદ કરો",
+  "aadhar_card": "આધાર કાર્ડ",
+  "pan_card": "પાન કાર્ડ",
+  "driving_liscense": "ડ્રાઇવિંગ લાઇસન્સ",
+  "voter_id": "મતદાર આઈડી",
+  "passport": "પાસપોર્ટ",
+  "get_kyc": "KYC મેળવો"
+}

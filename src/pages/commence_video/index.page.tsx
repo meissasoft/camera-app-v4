@@ -57,7 +57,7 @@ const Commenceyourvideo = () => {
   return (
     <DivMain>
       <div>
-        <Header onClick={onClickHeaderIcon} text={t('Commence your video KYC')} />
+        <Header onClick={onClickHeaderIcon} text={t('commence_your_video_kyc')} />
         <IdentificationStyled>
           <DivVerificationCardStyled>
             <CardIcon />

@@ -1,0 +1,13 @@
+{
+  "fill_the_form": "ഫോം പൂരിപ്പിക്കുക",
+  "full_name": "പൂർണ്ണമായ പേര്*",
+  "mobile_number": "മൊബൈൽ നമ്പർ",
+  "select_id_documents": "ഐഡി പ്രമാണങ്ങൾ തിരഞ്ഞെടുക്കുക",
+  "please_select_atleast_2_ID_documents_for_verification": "സ്ഥിരീകരണത്തിനായി കുറഞ്ഞത് 2 ഐഡി ഡോക്യുമെന്റുകളെങ്കിലും തിരഞ്ഞെടുക്കുക",
+  "aadhar_card": "ആധാർ കാർഡ്",
+  "pan_card": "പാൻ കാർഡ്",
+  "driving_liscense": "ഡ്രൈവിംഗ് ലൈസൻസ്",
+  "voter_id": "വോട്ടർ ഐഡി",
+  "passport": "പാസ്പോർട്ട്",
+  "get_kyc": "KYC നേടുക"
+}

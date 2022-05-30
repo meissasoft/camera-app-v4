@@ -1,0 +1,9 @@
+{
+  "kyc_details": "केवायसी तपशील",
+  "full_name": "पूर्ण नाव*",
+  "aadhaar_number": "आधार क्रमांक",
+  "pan_card_number": "पॅन कार्ड क्रमांक",
+  "address": "पत्ता",
+  "date_of_birth": "जन्मतारीख",
+  "proceed": "पुढे जा"
+}

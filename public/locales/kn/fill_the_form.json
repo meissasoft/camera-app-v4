@@ -1,0 +1,13 @@
+{
+  "fill_the_form": "ಫಾರ್ಮ್ ಅನ್ನು ಭರ್ತಿ ಮಾಡಿ",
+  "full_name": "ಪೂರ್ಣ ಹೆಸರು*",
+  "mobile_number": "ಮೊಬೈಲ್ ನಂಬರ",
+  "select_id_documents": "ID ದಾಖಲೆಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+  "please_select_atleast_2_ID_documents_for_verification": "ಪರಿಶೀಲನೆಗಾಗಿ ದಯವಿಟ್ಟು ಕನಿಷ್ಠ 2 ID ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+  "aadhar_card": "ಆಧಾರ್ ಕಾರ್ಡ್",
+  "pan_card": "ಪ್ಯಾನ್ ಕಾರ್ಡ್",
+  "driving_liscense": "ಡ್ರೈವಿಂಗ್ ಲೈಸೆನ್ಸ್",
+  "voter_id": "ಮತದಾರರ ಗುರುತಿನ ಚೀಟಿ",
+  "passport": "ಪಾಸ್ಪೋರ್ಟ್",
+  "get_kyc": "KYC ಪಡೆಯಿರಿ"
+}

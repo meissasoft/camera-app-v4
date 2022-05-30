@@ -24,27 +24,27 @@ const TokenNumber = () => {
     <DivMain>
       <div>
         <div className="heading">
-          <Heading text={t('Your token number')} onClick={handleBack} />
+          <Heading text={t('your_token_number')} onClick={handleBack} />
         </div>
 
         <div className="mt-5 text-center">
           <p className="tockenNumber">25</p>
-          <p className="description">{t('Request you to wait for till your token number is zero.')}</p>
+          <p className="description">{t('request_you_to_wait_for_till_your_token_number_is_zero.')}</p>
         </div>
         <hr />
         <div className="mt-5 text-center">
-          <div className="title">{t('Your estimated wait time')}</div>
+          <div className="title">{t('your_estimated_wait_time')}</div>
           <p className="estimatedTime">00:45:30</p>
           <p className="description">
             {t(
-              'As all our agents are busy at this moment, We recommend you to wait patiently and come back after sometime '
+              'as_all_our_agents_are_busy_at_this_moment_we_recommend_you_to_wait_patiently_and_come_back_after_sometime '
             )}
           </p>
         </div>
       </div>
 
       <Button isBottom onClick={handleContinue} className="my-5 m-auto">
-        Book a slot
+        {t('book_a_slot')}
       </Button>
     </DivMain>
   );

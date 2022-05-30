@@ -1,18 +1,13 @@
 import router from 'next/router';
-
-import React from 'react';
-
+import React, { useState } from 'react';
 import { useTranslation } from 'next-i18next';
-
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Header from '@/components/core/Header';
 import Button from '@/components/core/Button';
-
 import { CardIcon } from '@/assets/svg/card-icon2';
 import { GoogleIcon } from '@/assets/svg/google-1';
-
 import {
-  DivButton,
+  DivFooterButton,
   DivButtons,
   DivMain,
   DivVerificationCardStyled,
@@ -22,61 +17,75 @@ import {
   IdentificationSmallTextStyled,
   IdentificationStyled,
   IdentificationTextStyled,
-  Row,
-  SpanTagButton,
+  IdentificationStyled2,
+  StyledSpan,
   StyledLine,
   BoldText,
+  LightText,
 } from './index.style';
-
 /**
  *
  * @returns KeepThingsHandy page
  */
-
 const KeepThingsHandy = () => {
-  const { t } = useTranslation('KeepThingsHandy');
-
-  const onClickHeaderIcon = () => {
-    router.push('/commence_your_video_kyc');
-  };
-
-  const handleStart = () => {
-    router.push('/token_number');
-  };
-
-  const names = [
+  const { t } = useTranslation('keep_things_handy');
+  const [languages, setLanguages] = useState<{ name: string; selected: boolean }[]>([
     {
       name: t('English'),
+      selected: true,
     },
     {
       name: t('Telugu'),
+      selected: false,
     },
     {
       name: t('Hindi'),
+      selected: false,
     },
-    { name: t('Tamil') },
-    { name: t('kannada') },
-    { name: t('Malayalam') },
-    { name: t('kannada') },
-  ];
-
+    {
+      name: t('Tamil'),
+      selected: false,
+    },
+    {
+      name: t('kannada'),
+      selected: false,
+    },
+    {
+      name: t('Malayalam'),
+      selected: false,
+    },
+    {
+      name: t('kannada'),
+      selected: false,
+    },
+  ]);
+  const onClickHeaderIcon = () => {
+    router.push('/download_successfully');
+  };
+  const handleStart = () => {
+    router.push('/token_number');
+  };
+  const onClickLangugae = (index: number) => {
+    const temp = [...languages];
+    temp.forEach((language) => {
+      language.selected = false;
+    });
+    temp[index].selected = true;
+    setLanguages(temp);
+  };
   return (
     <DivMain>
       <div>
-        <Header onClick={onClickHeaderIcon} text={t('Keep things handy')} />
+        <Header onClick={onClickHeaderIcon} text={t('keep_things_handy')} />
         <IdentificationStyled>
           <DivVerificationCardStyled>
             <CardIcon />
           </DivVerificationCardStyled>
-          {/* <IdentificationStyled2>
-            <IdentificationTextStyled>
-              please keep handy your <strong>PAN Card,</strong>
-            </IdentificationTextStyled>
-          </IdentificationStyled2>
- */}
-
           <IdentificationTextStyled>
-            please keep handy your <BoldText>PAN Card, Blank Paper</BoldText> and <BoldText>Pen.</BoldText>
+            <LightText>{t('please_keep_handy_your')}</LightText> <BoldText>{t('pan_card_blank_paper')}</BoldText>{' '}
+            <LightText> {t('and')}</LightText>
+            &nbsp;
+            <BoldText>{t('pen')}</BoldText>
           </IdentificationTextStyled>
         </IdentificationStyled>
         <DocumentContainer>
@@ -84,40 +93,41 @@ const KeepThingsHandy = () => {
           <DivVerificationGoogleStyled>
             <GoogleIcon />
           </DivVerificationGoogleStyled>
-
-          <IdentificationStyled>
-            <IdentificationSelectStyled>{t('Select language')}</IdentificationSelectStyled>
+          <IdentificationStyled2>
+            <IdentificationSelectStyled>{t('select_language')}</IdentificationSelectStyled>
             <IdentificationSmallTextStyled>
-              'We recommend you select a below listed <BoldText style={{ opacity: 10 }}>Language</BoldText> to continue
-              with your video call.
+              <LightText>{t('we_recommend_you_select_a_below_listed')}</LightText> <BoldText>{t('language')}</BoldText>{' '}
+              <LightText>{t('to_continue_with_your_video_call.')}</LightText>
             </IdentificationSmallTextStyled>
-          </IdentificationStyled>
+          </IdentificationStyled2>
           <DivButtons>
-            {names.map((doc, index) => (
-              <Row>
-                <div key={index} className="col-3">
-                  <button className="btn btn-primary outline-none border-0 shadow-none">
-                    <SpanTagButton> {doc.name}</SpanTagButton>
-                  </button>
-                </div>
-              </Row>
+            {languages.map(({ name, selected }, index) => (
+              <>
+                {selected ? (
+                  <Button className="btn shadow-none" onClick={() => onClickLangugae(index)}>
+                    {name}
+                  </Button>
+                ) : (
+                  <Button isTransparent className="btn shadow-none" onClick={() => onClickLangugae(index)}>
+                    <StyledSpan>{name}</StyledSpan>
+                  </Button>
+                )}
+              </>
             ))}
           </DivButtons>
         </DocumentContainer>
       </div>
-      <DivButton>
-        <Button isBottom onClick={handleStart} className="m-auto">
-          I'm Ready
+      <DivFooterButton>
+        <Button onClick={handleStart} className="m-auto">
+          {t("i'm_Ready")}
         </Button>
-      </DivButton>
+      </DivFooterButton>
     </DivMain>
   );
 };
-
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['KeepThingsHandy'])),
+    ...(await serverSideTranslations(locale, ['keep_things_handy'])),
   },
 });
-
 export default KeepThingsHandy;

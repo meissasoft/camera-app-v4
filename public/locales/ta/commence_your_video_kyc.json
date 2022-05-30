@@ -1,0 +1,9 @@
+{
+  "kyc_details": "KYC விவரங்கள்",
+  "full_name": "முழு பெயர்*",
+  "aadhaar_number": "ஆதார் எண்",
+  "pan_card_number": "பான் கார்டு எண்",
+  "address": "முகவரி",
+  "date_of_birth": "பிறந்த தேதி",
+  "proceed": "தொடரவும்"
+}

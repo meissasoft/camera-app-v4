@@ -1,20 +1,32 @@
+import router from 'next/router';
 import { useEffect, useRef } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import router from 'next/router';
+import { useTranslation } from 'next-i18next';
 import { useUserMedia } from '@/hooks/useUserMedia';
-import BottomText from '@/components/VideoBottomText';
-import { DivCameraBox, DivFrontCam, DivMain, DivFrontCamContainer, DivTextStyled } from './index.style';
+import PanCardPhotos from '@/components/core/PanCardPhoto/index.';
+import {
+  DivCameraBox,
+  DivFrontCam,
+  DivMain,
+  DivFrontCamContainer,
+  DivDocScanContainer,
+  DivDocScan,
+  PanCameraTextStyledWrapper,
+  Canvas,
+} from './index.styles';
 /**
  *
- * @returns initiated_video_call page
+ * @returns Pan Card  page
  */
-const InitiatedVideoCall = () => {
+const PanCard = () => {
   const front = {
     audio: true,
-    video: { facingMode: 'user' }, // change to user for front camera
+    video: { facingMode: 'environment' }, // change to user for front camera
   };
+  const { t } = useTranslation('pan_card_photo');
   const videoRefFront: any = useRef(null);
   const videoRefBack: any = useRef(null);
+  const photoRefFront: any = useRef(null);
   const mediaStreamFront = useUserMedia(front, false);
   const mediaRecorderFront: any = useRef(null);
   const mediaRecorderBack: any = useRef(null);
@@ -70,26 +82,49 @@ const InitiatedVideoCall = () => {
       }
     }
   }, [mediaStreamFront]);
+  const takePhoto = () => {
+    const width = 314;
+    const height = width / (16 / 9);
+    const video = videoRefFront.current;
+    const photo = photoRefFront.current as any;
+    photo.width = width;
+    photo.height = height;
+    if (photo) {
+      const ctx = photo.getContext('2d');
+      ctx.drawImage(video, 0, 0, width, height);
+      const dataUrl = photo.toDataURL();
+      console.log('dataUrl', dataUrl);
+    }
+  };
   useEffect(() => {
     setTimeout(() => {
-      router.push('/live_photo');
-    }, 10000);
+      router.push('/signature_captured');
+    }, 15000);
   }, []);
   return (
     <DivMain>
+      <DivCameraBox ref={videoRefBack} muted playsInline />
       <DivFrontCamContainer>
         <DivFrontCam ref={videoRefFront} muted playsInline />
       </DivFrontCamContainer>
-      <DivCameraBox ref={videoRefBack} muted playsInline />
-      <DivTextStyled>
-        <BottomText />
-      </DivTextStyled>
+      <DivDocScanContainer>
+        <DivDocScan ref={videoRefFront} muted playsInline />
+      </DivDocScanContainer>
+      <Canvas ref={photoRefFront}></Canvas>
+      <PanCameraTextStyledWrapper>
+        <PanCardPhotos
+          takePhoto={takePhoto}
+          text1={t('position_the_pan_card_exactly_in_the_frame')}
+          text2={t('pan_card_captured_successfully')}
+          text3={t('hold_your_signature')}
+        />
+      </PanCameraTextStyledWrapper>
     </DivMain>
   );
 };
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['initiated_video_call'])),
+    ...(await serverSideTranslations(locale, ['pan_card_photo'])),
   },
 });
-export default InitiatedVideoCall;
+export default PanCard;

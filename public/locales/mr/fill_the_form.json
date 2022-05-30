@@ -1,0 +1,13 @@
+{
+  "fill_the_form": "फॉर्म भरा",
+  "full_name": "पूर्ण नाव*",
+  "mobile_number": "मोबाईल नंबर",
+  "select_id_documents": "आयडी दस्तऐवज निवडा",
+  "please_select_atleast_2_ID_documents_for_verification": "कृपया पडताळणीसाठी किमान 2 आयडी दस्तऐवज निवडा",
+  "aadhar_card": "आधार कार्ड",
+  "pan_card": "पॅन कार्ड",
+  "driving_liscense": "ड्रायव्हिंग लायसन्स",
+  "voter_id": "मतदार ओळखपत्र",
+  "passport": "पासपोर्ट",
+  "get_kyc": "केवायसी मिळवा"
+}

@@ -1,0 +1,13 @@
+{
+  "fill_the_form": "ফর্ম পূরণ করুন",
+  "full_name": "পুরো নাম*",
+  "mobile_number": "মোবাইল নম্বর",
+  "select_id_documents": "আইডি নথি নির্বাচন করুন",
+  "please_select_atleast_2_ID_documents_for_verification": "যাচাইকরণের জন্য অনুগ্রহ করে কমপক্ষে 2টি আইডি নথি নির্বাচন করুন৷",
+  "aadhar_card": "আধার কার্ড",
+  "pan_card": "প্যান কার্ড",
+  "driving_liscense": "ড্রাইভিং লাইসেন্স",
+  "voter_id": "ভোটার আইডি",
+  "passport": "পাসপোর্ট",
+  "get_kyc": "KYC পান"
+}

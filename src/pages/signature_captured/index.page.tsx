@@ -1,18 +1,20 @@
+import router from 'next/router';
 import { useEffect, useRef } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import router from 'next/router';
+import { useTranslation } from 'next-i18next';
 import { useUserMedia } from '@/hooks/useUserMedia';
-import BottomText from '@/components/VideoBottomText';
-import { DivCameraBox, DivFrontCam, DivMain, DivFrontCamContainer, DivTextStyled } from './index.style';
+import { DoneIcon } from '@/assets/svg/done-icon';
+import { DivCameraBox, DivFrontCam, DivMain, DivFrontCamContainer, DivTextStyled, TextStyled } from './index.styles';
 /**
  *
- * @returns initiated_video_call page
+ * @returns Signature captured successfully page
  */
-const InitiatedVideoCall = () => {
+const SignatureCaptured = () => {
   const front = {
     audio: true,
-    video: { facingMode: 'user' }, // change to user for front camera
+    video: { facingMode: 'environment' }, // change to user for front camera
   };
+  const { t } = useTranslation('signature_captured');
   const videoRefFront: any = useRef(null);
   const videoRefBack: any = useRef(null);
   const mediaStreamFront = useUserMedia(front, false);
@@ -72,8 +74,8 @@ const InitiatedVideoCall = () => {
   }, [mediaStreamFront]);
   useEffect(() => {
     setTimeout(() => {
-      router.push('/live_photo');
-    }, 10000);
+      router.push('/status_updated_successfully');
+    }, 15000);
   }, []);
   return (
     <DivMain>
@@ -82,14 +84,17 @@ const InitiatedVideoCall = () => {
       </DivFrontCamContainer>
       <DivCameraBox ref={videoRefBack} muted playsInline />
       <DivTextStyled>
-        <BottomText />
+        <TextStyled>
+          <span>{t('signature_captured_successfully')}</span>
+          <DoneIcon />
+        </TextStyled>
       </DivTextStyled>
     </DivMain>
   );
 };
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['initiated_video_call'])),
+    ...(await serverSideTranslations(locale, ['signature_captured'])),
   },
 });
-export default InitiatedVideoCall;
+export default SignatureCaptured;

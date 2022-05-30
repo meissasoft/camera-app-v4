@@ -2,12 +2,10 @@ import { useRouter } from 'next/router';
 
 import { useState } from 'react';
 
-import { useTranslation } from 'next-i18next';
 import { TickIcon } from '@/assets/svg/tick-icon';
 import Button from '@/components/core/Button';
 import Header from '@/components/core/Header';
 
-import MyCommenceCenteredModal from '@/components/core/CommenceVideomodel/index.page';
 import { StyledLine, StyledLanguage, Row, DivMain, DivMarginTop, FooterButtonStyle } from './index.styles';
 import { ILanguage } from './index.types';
 
@@ -17,9 +15,7 @@ import { ILanguage } from './index.types';
  */
 
 const ChooseLangugae = () => {
-  const { t } = useTranslation();
   const router = useRouter();
-  const [modalShow, setModalShow] = useState(false);
   const [langugaes, setLanguages] = useState<ILanguage[]>([
     {
       name: 'English',
@@ -90,11 +86,9 @@ const ChooseLangugae = () => {
   };
 
   const handleContinue = () => {
-    setModalShow(true);
+    router.push(`${selectedLangugage}/aadhaar_xml`);
   };
-  const onClicOk = () => {
-    router.push(`${selectedLangugage}/commence_video`);
-  };
+
   return (
     <DivMain>
       <div>
@@ -118,24 +112,6 @@ const ChooseLangugae = () => {
           Continue
         </Button>
       </FooterButtonStyle>
-      <MyCommenceCenteredModal
-        show={modalShow}
-        onOk={onClicOk}
-        onHide={() => setModalShow(false)}
-        userConsent={t('User Consent')}
-        clickingAgree={t('By clicking on ‘Agree’, you hereby:')}
-        listParaOne={t(
-          'Acknowledge the request made by Syntizen technologies private limited to provide personal details.'
-        )}
-        listParaTwo={t(
-          'Provide my unconditional concent to access, copy and store all information there in by sharing the inofrmation.'
-        )}
-        listParaThree={t(
-          'Also undertake I/We are authorised to do so on behalf of the requestee organisation and tkae sole and complete responsibilitity for the same.'
-        )}
-        disagree={t('Disagree')}
-        agree={t('Agree')}
-      />
     </DivMain>
   );
 };
