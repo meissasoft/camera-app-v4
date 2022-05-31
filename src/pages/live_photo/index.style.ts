@@ -14,7 +14,7 @@ export const CameraStyled = styled.div`
 
 export const DivCameraBox = styled.video`
   position: relative;
-  margin: 152px auto auto auto;
+  margin: 132px auto auto auto;
   width: 320px;
   height: 340px;
   border-radius: 268px;
@@ -23,11 +23,17 @@ export const DivCameraBox = styled.video`
   justify-content: center;
   object-fit: cover;
   background: ${COLORS.BLACK_200}
-
   border-color: #ffffff;
   @media (max-width: 500px) {
-    width: 327px;
-    height: 340px;
+  margin: 100px auto auto auto;
+  width: 327px;
+  height: 340px;
+  }
+
+  @media (max-width: 474px) {
+  margin: 100px auto auto auto;
+  width: 327px;
+  height: 340px;
   }
   @media (max-width: 370px) {
     width: 270px;
@@ -38,6 +44,7 @@ export const DivCameraBox = styled.video`
     width: 240px;
     height: 240px;
   }
+
   @media (max-height: 667px) {
     width: 270px;
     height: 270px;
@@ -54,13 +61,13 @@ export const DivVideoBox = styled.video`
   width: 120px;
   height: 140px;
   margin-left: 53%;
-  margin-top: -450px;
+  margin-top: -470px;
   border: 1.5px solid #FFFFFF;
   border-radius: 12px;
   object-fit: cover;
 
   @media (max-width: 500px) {
-    margin-top: -450px;
+    margin-top: -455px;
     margin-left: 54%;
   }
 
@@ -69,25 +76,49 @@ export const DivVideoBox = styled.video`
     margin-left: 55%;
   }
 
-  @media (max-width: 371px) {
-    margin-top: -385px;
+  @media (max-width: 375px) {
+    margin-top: -450px;
+    margin-left: 55%;
+  }
+    @media (max-width: 371px) {
+    margin-top: -380px;
     margin-left: 48%;
   }
 
-  @media (max-width: 331px) {
-    margin-top: -355px;
-    margin-left: 44%;
-  }
-
-  @media (max-width: 293px) {
-    margin-top: -355px;
-    margin-left: 43%;
-  }
-
-  @media (max-height: 668px) {
+   @media (max-width: 369px) {
     margin-top: -380px;
     margin-left: 49%;
   }
+
+    @media (max-width: 330px) {
+    margin-top: -360px;
+    margin-left: 45%;
+  }
+
+    @media (max-width: 297px) {
+    margin-top: -360px;
+    margin-left: 42%;
+  }
+
+  @media (max-width: 293px) {
+    margin-top: -365px;
+    margin-left: 43%;
+  }
+
+    @media (max-height: 725px) {
+    margin-top: -445px;
+    margin-left: 55%;
+  } 
+
+  @media (max-height: 668px) {
+    margin-top: -450px;
+    margin-left: 55%;
+  }
+      @media (max-height: 667px) {
+    margin-top: -380px;
+    margin-left: 47%;
+  }
+ 
 `;
 
 export const Video = styled.video`

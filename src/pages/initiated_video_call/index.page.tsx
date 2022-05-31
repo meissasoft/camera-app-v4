@@ -2,17 +2,21 @@ import { useEffect, useRef } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import router from 'next/router';
 import { useUserMedia } from '@/hooks/useUserMedia';
+
 import BottomText from '@/components/VideoBottomText';
 import { DivCameraBox, DivFrontCam, DivMain, DivFrontCamContainer, DivTextStyled } from './index.style';
+
 /**
  *
  * @returns initiated_video_call page
  */
+
 const InitiatedVideoCall = () => {
   const front = {
     audio: true,
     video: { facingMode: 'user' }, // change to user for front camera
   };
+
   const videoRefFront: any = useRef(null);
   const videoRefBack: any = useRef(null);
   const mediaStreamFront = useUserMedia(front, false);
@@ -20,6 +24,7 @@ const InitiatedVideoCall = () => {
   const mediaRecorderBack: any = useRef(null);
   const blobsRecordedFront: any = [];
   const blobsRecordedBack: any = [];
+
   useEffect(() => {
     if (mediaStreamFront && videoRefFront.current && !videoRefFront.current.srcObject) {
       videoRefFront.current.setAttribute('autoplay', '');
@@ -70,11 +75,13 @@ const InitiatedVideoCall = () => {
       }
     }
   }, [mediaStreamFront]);
+
   useEffect(() => {
     setTimeout(() => {
       router.push('/live_photo');
     }, 10000);
   }, []);
+
   return (
     <DivMain>
       <DivFrontCamContainer>
@@ -92,4 +99,5 @@ export const getStaticProps = async ({ locale }: { locale: string }) => ({
     ...(await serverSideTranslations(locale, ['initiated_video_call'])),
   },
 });
+
 export default InitiatedVideoCall;

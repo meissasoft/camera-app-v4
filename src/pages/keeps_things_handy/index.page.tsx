@@ -60,7 +60,7 @@ const KeepThingsHandy = () => {
     },
   ]);
   const onClickHeaderIcon = () => {
-    router.push('/download_successfully');
+    router.push('/commence_your_video_kyc');
   };
   const handleStart = () => {
     router.push('/token_number');

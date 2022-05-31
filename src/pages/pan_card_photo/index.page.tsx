@@ -1,9 +1,13 @@
 import router from 'next/router';
+
 import { useEffect, useRef } from 'react';
+
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+
 import { useUserMedia } from '@/hooks/useUserMedia';
-import PanCardPhotos from '@/components/core/PanCardPhoto/index.';
+
+import PanCardPhotos from '@/components/core/PanCardPhoto';
 import {
   DivCameraBox,
   DivFrontCam,
@@ -13,11 +17,17 @@ import {
   DivDocScan,
   PanCameraTextStyledWrapper,
   Canvas,
+  DivFrontCamLeftContainer,
+  DivFrontCamRightContainer,
+  DivContainer,
+  DivEmptyBlur,
 } from './index.styles';
+
 /**
  *
  * @returns Pan Card  page
  */
+
 const PanCard = () => {
   const front = {
     audio: true,
@@ -32,6 +42,7 @@ const PanCard = () => {
   const mediaRecorderBack: any = useRef(null);
   const blobsRecordedFront: any = [];
   const blobsRecordedBack: any = [];
+
   useEffect(() => {
     if (mediaStreamFront && videoRefFront.current && !videoRefFront.current.srcObject) {
       videoRefFront.current.setAttribute('autoplay', '');
@@ -82,6 +93,7 @@ const PanCard = () => {
       }
     }
   }, [mediaStreamFront]);
+
   const takePhoto = () => {
     const width = 314;
     const height = width / (16 / 9);
@@ -96,29 +108,42 @@ const PanCard = () => {
       console.log('dataUrl', dataUrl);
     }
   };
+
   useEffect(() => {
     setTimeout(() => {
       router.push('/signature_captured');
     }, 15000);
   }, []);
+
   return (
     <DivMain>
       <DivCameraBox ref={videoRefBack} muted playsInline />
-      <DivFrontCamContainer>
-        <DivFrontCam ref={videoRefFront} muted playsInline />
-      </DivFrontCamContainer>
-      <DivDocScanContainer>
-        <DivDocScan ref={videoRefFront} muted playsInline />
-      </DivDocScanContainer>
       <Canvas ref={photoRefFront}></Canvas>
-      <PanCameraTextStyledWrapper>
-        <PanCardPhotos
-          takePhoto={takePhoto}
-          text1={t('position_the_pan_card_exactly_in_the_frame')}
-          text2={t('pan_card_captured_successfully')}
-          text3={t('hold_your_signature')}
-        />
-      </PanCameraTextStyledWrapper>
+      <DivContainer>
+        <DivEmptyBlur height="2vh" />
+        <DivFrontCamContainer>
+          <DivFrontCamLeftContainer>
+            <div></div>
+            <DivFrontCam ref={videoRefFront} muted playsInline />
+          </DivFrontCamLeftContainer>
+          <DivFrontCamRightContainer>&emsp; &nbsp; </DivFrontCamRightContainer>
+        </DivFrontCamContainer>
+        <DivEmptyBlur height="11vh" />
+        <DivDocScanContainer>
+          <span>&emsp; &nbsp; </span>
+          <DivDocScan />
+          <span>&emsp; &nbsp; </span>
+        </DivDocScanContainer>
+        <DivEmptyBlur height="40vh" />
+        <PanCameraTextStyledWrapper>
+          <PanCardPhotos
+            takePhoto={takePhoto}
+            text1={t('position_the_pan_card_exactly_in_the_frame')}
+            text2={t('pan_card_captured_successfully')}
+            text3={t('hold_your_signature')}
+          />
+        </PanCameraTextStyledWrapper>
+      </DivContainer>
     </DivMain>
   );
 };
@@ -127,4 +152,5 @@ export const getStaticProps = async ({ locale }: { locale: string }) => ({
     ...(await serverSideTranslations(locale, ['pan_card_photo'])),
   },
 });
+
 export default PanCard;
