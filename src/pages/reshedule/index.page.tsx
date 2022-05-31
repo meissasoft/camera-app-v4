@@ -28,7 +28,7 @@ const Reshedule = () => {
   const { t } = useTranslation('reschedule');
   const [value, onChange] = useState(new Date());
   const [dropDownOpen, setDropDownOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(`${t('select_a_available_time_slot')}`);
+  const [selectedOption, setSelectedOption] = useState(`${t('select_a_available_time_slot ')}`);
   const [selectOptionIcon, setSelectOptionIcon] = useState<any>(null);
   const AvaliableSlots = [
     {
@@ -64,7 +64,7 @@ const Reshedule = () => {
         <Heading text={t('reschedule')} onClick={handleBack} />
         <div className="mt-5 text-center">
           <DescriptionDiv>
-            <LightText>{t('please_select_a')}</LightText> <BoldText>{t('date_and_time')}</BoldText>
+            <LightText>{t('please_select_a')}</LightText> <BoldText>{t('date_and_time')}</BoldText>&nbsp;
             <LightText>{t('to_reschedule_a_video_call_session_with_our_agent')}</LightText>
           </DescriptionDiv>
         </div>
@@ -93,7 +93,7 @@ const Reshedule = () => {
                       key={index}
                       onClick={() => {
                         if (selectOptionIcon === item.id) {
-                          setSelectedOption(`${t('select_a_available_time_slot')}`);
+                          setSelectedOption(`${t('select_a_available_time_slot ')}`);
                           setSelectOptionIcon(null);
                         } else {
                           setSelectedOption(`${item.startTime} to ${item.endTime}`);

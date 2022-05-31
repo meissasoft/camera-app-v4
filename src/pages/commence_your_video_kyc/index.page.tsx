@@ -11,7 +11,7 @@ import FieldTextarea from '@/components/core/TextArea';
 
 import KYCVideo from '@/assets/svg/kyc_video';
 
-import { DivMain, FooterButtonStyle, SvgDiv } from './index.styles';
+import { DivMain, SvgDiv, ButtonContainer } from './index.styles';
 
 /**
  *
@@ -52,11 +52,11 @@ const CommenceYourVideoKYC = () => {
         <FieldInput placeholder={t('date_of_birth')} name={'mobile'} className="my-2   rounded border p-2 loginInput" />
       </div>
 
-      <FooterButtonStyle>
-        <div className="button-container">
-          <Button onClick={handelProceed}>{t('proceed')}</Button>
-        </div>
-      </FooterButtonStyle>
+      <ButtonContainer>
+        <Button isBottom onClick={handelProceed} className="m-auto">
+          {t('proceed')}
+        </Button>
+      </ButtonContainer>
     </DivMain>
   );
 };

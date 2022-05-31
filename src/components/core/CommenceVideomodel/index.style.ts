@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { Modal } from 'react-bootstrap';
 import { COLORS } from '@/constants/colors';
+
 export const StyledAgreeParagraph = styled.p`
   font-style: normal;
   font-weight: 400;
@@ -8,15 +9,18 @@ export const StyledAgreeParagraph = styled.p`
   color: ${COLORS.GREY_600};
   margin: 0px;
 `;
+
 export const StyledRow = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 10px;
 `;
+
 export const ParagraphText1Model = styled.span`
   font-weight: 600;
   color: black;
 `;
+
 export const BodyModalStyled = styled.div`
   border-radius: 10px;
   display: flex;
@@ -24,20 +28,22 @@ export const BodyModalStyled = styled.div`
   align-items: flex-start;
   background: #ffffff;
   position: absolute;
-  width: 370px;
-  left: calc(50% - 370px / 2 + 0.5px);
+  width: 327px;
+  left: calc(50% - 327px / 2 + 0.5px);
   top: calc(100% - 500px / 2);
   background: rgba(0, 0, 0, 0.8);
   background: rgba(255, 255, 255);
   backdrop-filter: blur(54.3656px);
   padding: 15px;
   border-radius: 14px;
+
   @media (max-width: 340px) {
     width: 250px;
     left: calc(50% - 250px / 2 + 0.5px);
     top: calc(100% - 500px / 2);
   }
 `;
+
 export const StyledParagraph = styled.p`
   font-style: normal;
   font-weight: 400;
@@ -46,11 +52,13 @@ export const StyledParagraph = styled.p`
   margin-left: -3px;
   color: ${COLORS.GREY_600};
 `;
+
 export const CenterHeaderModel = styled.p`
   text-align: center;
   font-size: 16px;
   font-weight: 600;
 `;
+
 export const AgreeButton = styled.button`
   color: ${COLORS.WHITE};
   font-weight: 600;
@@ -64,6 +72,7 @@ export const AgreeButton = styled.button`
   margin-left: 20px;
   padding: 10px;
 `;
+
 export const DisAgreeButton = styled.button`
   outline: none;
   background-color: ${COLORS.BLUE_600};
@@ -74,6 +83,7 @@ export const DisAgreeButton = styled.button`
   border: none;
   padding: 10px;
 `;
+
 export const DisAgreeText = styled.span`
   background: linear-gradient(90deg, ${COLORS.FAUX_CHINESE_BLUE} 0%, ${COLORS.SKY_100} 85%);
   -webkit-background-clip: text;
@@ -84,6 +94,7 @@ export const DisAgreeText = styled.span`
   font-size: 15px;
   text-align: center;
 `;
+
 export const CrossButtonModel = styled.div`
   margin-right: -15px;
   margin-bottom: 18.88px;

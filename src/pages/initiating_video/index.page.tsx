@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
 
 import { useEffect } from 'react';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Header from '@/components/core/Header';
 
 import { HourGlassIcon } from '@/assets/svg/hourglass-icon';
@@ -11,7 +13,7 @@ import { DivMain, DivSvg, DivForm, ParagraphStyled, TextStyled } from './index.s
  */
 const InitiatingVideo = () => {
   const router = useRouter();
-
+  const { t } = useTranslation('initiating_video');
   useEffect(() => {
     setTimeout(() => {
       router.push('/initiated_video_call');
@@ -25,17 +27,23 @@ const InitiatingVideo = () => {
   return (
     <DivMain>
       <div>
-        <Header text="Initiating a video call" onClick={onClickHeaderIcon} />
+        <Header text={t('initiating_a_video_call')} onClick={onClickHeaderIcon} />
         <DivSvg>
           <HourGlassIcon />
         </DivSvg>
         <DivForm>
-          <TextStyled>Please wait...</TextStyled>
-          <ParagraphStyled>While we are searching for the agent to initiate the video call</ParagraphStyled>
+          <TextStyled>{t('please_wait...')}</TextStyled>
+          <ParagraphStyled>{t('while_we_are_searching_for_the_agent_to')}</ParagraphStyled>
         </DivForm>
       </div>
     </DivMain>
   );
 };
+
+export const getStaticProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['initiating_video'])),
+  },
+});
 
 export default InitiatingVideo;
