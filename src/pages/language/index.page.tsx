@@ -88,7 +88,6 @@ const ChooseLangugae = () => {
   const handleContinue = () => {
     router.push(`${selectedLangugage}/aadhaar_xml`);
   };
-
   return (
     <DivMain>
       <div>

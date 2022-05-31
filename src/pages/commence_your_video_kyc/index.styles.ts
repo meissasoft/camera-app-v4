@@ -6,15 +6,16 @@ export const DivMain = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  .button-container {
-    width: 100%;
-    margin-top: 48px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 `;
+
+export const ButtonContainer = styled.div`
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const Row = styled.div`
   display: flex;
   flex-direction: row;
@@ -46,6 +47,8 @@ export const DivForm = styled.div`
 `;
 export const FooterButtonStyle = styled.div`
   margin-top: 2%;
+  display: flex;
+  justify-content: center;
 `;
 export const YesButtonStyle = styled.p`
   font-style: normal;
