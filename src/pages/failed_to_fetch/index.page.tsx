@@ -42,14 +42,14 @@ const NoAadhaarNumber = () => {
         </div>
         <DivContent>
           <NotFound />
-          <StyledTitle>{t('Failed to fetch details')}</StyledTitle>
+          <StyledTitle>{t('failed_to_fetch_details')}</StyledTitle>
           <StyledDescription>
-            {t('We couldn’t find any data on digilocker so we suggest you to follow the traditional process')}
+            {t('we_couldn’t_find_any_data_on_digilocker_so_we_suggest_you_to_follow_the_traditional_process')}
           </StyledDescription>
         </DivContent>
         <BottomButtonDiv>
           <Button onClick={handleSendOtp} className="my-5 m-auto">
-            {t('Try Again')}
+            {t('try_again')}
           </Button>
         </BottomButtonDiv>
       </DivInner>
