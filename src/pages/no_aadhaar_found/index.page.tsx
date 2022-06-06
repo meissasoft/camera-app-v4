@@ -20,7 +20,7 @@ import {
 } from './index.styles';
 
 const NoAadhaarNumber = () => {
-  const { t } = useTranslation('no_aadhaar');
+  const { t } = useTranslation('no_aadhaar_found');
   const handleBack = () => {
     router.push('/aadhaar_offline_kyc');
   };
@@ -42,14 +42,14 @@ const NoAadhaarNumber = () => {
         </div>
         <DivContent>
           <NoAadhaarFound />
-          <StyledTitle>{t('No Aadhaar and PAN data found')}</StyledTitle>
+          <StyledTitle>{t('no_aadhaar_and_pan_data_found')}</StyledTitle>
           <StyledDescription>
-            {t('We couldn’t find any data on digilocker so we suggest you to follow the traditional process')}
+            {t('we_couldn’t_find_any_data_on_digilocker_so_we_suggest_you_to_follow_the_traditional_process')}
           </StyledDescription>
         </DivContent>
         <BottomButtonDiv>
           <Button onClick={handleSendOtp} className="my-5 m-auto">
-            {t('Continue')}
+            {t('continue')}
           </Button>
         </BottomButtonDiv>
       </DivInner>
@@ -59,7 +59,7 @@ const NoAadhaarNumber = () => {
 
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['no_aadhaar'])),
+    ...(await serverSideTranslations(locale, ['no_aadhaar_found'])),
   },
 });
 
