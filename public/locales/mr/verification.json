@@ -2,10 +2,17 @@
   "identity_verification": "ओळख पडताळणी",
   "verify_your_identity": "तुमची ओळख सत्यापित करा",
   "it_will_take_less_than_2_minutes": "यास 2 मिनिटांपेक्षा कमी वेळ लागेल",
-  "step1": "पायरी 1",
-  "identity_document_verification": "ओळख दस्तऐवज सत्यापन",
+  "step1": "1 ली पायरी",
+  "pan_card_verification": "पॅन कार्ड पडताळणी",
   "take_a_picture_of_an_identity_document_and_upload_it_for_verification": "ओळख दस्तऐवजाचे छायाचित्र घ्या आणि ते पडताळणीसाठी अपलोड करा",
   "step2": "पायरी 2",
-  "record_a_selfie_video": "सेल्फी व्हिडिओ रेकॉर्ड करा",
-  "speak_out_load_and_move_your_head_finish_actions_in_25_seconds": "सेल्फी व्हिडिओ रेकॉर्ड करा."
+  "live_photo_check": "थेट फोटो तपासा",
+  "speak_out_load_and_move_your_head_finish_actions_in_25_seconds.": "भार हलवा आणि आपले डोके हलवा, 25 सेकंदात क्रिया पूर्ण करा.",
+  "step3": "पायरी 3",
+  "vcip": "VCIP",
+  "schedule_a_video_call_session_with_our_agent_and_follow_the_instructions.": "आमच्या एजंटसह व्हिडिओ कॉल सत्र शेड्यूल करा आणि अनुसरण करा सूचना",
+  "video_kyc_would_like_to_access_the_camera": "\"व्हिडिओ केवायसी\" कॅमेरा ऍक्सेस करू इच्छितो",
+  "required_for_document_and_facial_capture": "दस्तऐवज आणि फेशियल कॅप्चरसाठी आवश्यक आहे",
+  "don't_allow": "परवानगी देऊ नका",
+  "ok": "ओह"
 }

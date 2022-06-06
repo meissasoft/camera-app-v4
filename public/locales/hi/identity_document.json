@@ -5,9 +5,5 @@
   "adhaar_card": "आधार कार्ड",
   "passport": "पासपोर्ट",
   "licence": "चालक लाइसेंस",
-  "voter_id": "मतदाता पहचान पत्र",
-  "video_kyc_would_like_to_access_the_camera": "\"वीडियो केवाईसी\" कैमरे तक पहुंचना चाहेंगे",
-  "required_for_document_and_facial_capture": "दस्तावेज़ और चेहरे पर कब्जा करने के लिए आवश्यक",
-  "don't_allow": "अनुमति न दें  ",
-  "ok": "ओह"
+  "voter_id": "मतदाता पहचान पत्र"
 }

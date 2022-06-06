@@ -2,7 +2,7 @@
   "aadhaar_number": "આધાર નંબર",
   "enter_your_12_digit_aadhaar_number_to_begin": "શરૂ કરવા માટે તમારો 12 અંકનો આધાર નંબર દાખલ કરો",
   "aadhaar_number*": "આધાર નંબર*",
-  "enter_security_code*": "સુરક્ષા કોડ દાખલ કરો*",
+  "enter_security_code": "સુરક્ષા કોડ દાખલ કરો*",
   "type_the_character_you_see_in_the_picture": "તમે ચિત્રમાં જુઓ છો તે અક્ષર લખો",
   "send_otp": "ઓટીપી મોકલો"
 }

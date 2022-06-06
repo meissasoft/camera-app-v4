@@ -1,17 +1,15 @@
 import styled from '@emotion/styled';
 import { COLORS } from '@/constants/colors';
+
 export const DivMain = styled.div`
-  padding: 20px;
-  height: calc(100vh - 40px);
-  @media (max-height: 720px) {
-    height: calc(100vh - 100px);
-  }
-  @media (max-height: 670px) {
-    height: calc(100vh - 40px);
-  }
+  margin: 20px 20px 0px 20px;
+  height: calc(100vh - 20px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  -webkit-animation: fadeInUp 500ms ease-in-out; /* Chrome, Safari, Opera */
+  animation: fadeInUp 500ms ease-in-out;
+
   .btn {
     width: 100%;
     height: 30px;
@@ -29,15 +27,18 @@ export const IdentificationStyled = styled.div`
   margin: 20px 0px;
   text-align: center;
 `;
+
 export const IdentificationStyled2 = styled.div`
   text-align: center;
   gap: 5px;
 `;
+
 export const IdentificationTextStyled = styled.div`
   margin-top: 5px;
   display: inline;
   flex-direction: row;
 `;
+
 export const LightText = styled.span`
   font-style: normal;
   font-weight: 400;
@@ -47,6 +48,7 @@ export const LightText = styled.span`
   color: ${COLORS.GREY_12};
   opacity: 0.6;
 `;
+
 export const BoldText = styled.span`
   font-weight: 600;
   margin-top: 5px;
@@ -57,6 +59,7 @@ export const BoldText = styled.span`
   color: ${COLORS.BLACK_HEAVY} !important;
   opacity: 10 !important;
 `;
+
 export const IdentificationSelectStyled = styled.p`
   margin-top: 15px;
   font-style: normal;
@@ -66,6 +69,7 @@ export const IdentificationSelectStyled = styled.p`
   margin-bottom: 8px;
   color: black;
 `;
+
 export const IdentificationTextStyled2 = styled.p`
   font-style: normal;
   font-weight: 600;
@@ -73,6 +77,7 @@ export const IdentificationTextStyled2 = styled.p`
   text-align: center;
   margin-bottom: 0px !important;
 `;
+
 export const IdentificationTextParentDiv = styled.p`
   display: flex;
   flex-direction: row;
@@ -81,9 +86,11 @@ export const IdentificationTextParentDiv = styled.p`
   left: 50%;
   transform: translate(-50%, -50%);
 `;
+
 export const IdentificationSmallTextStyled = styled.p`
   margin-top: 5px !important ;
 `;
+
 export const IdentificationSmallTextStyled2 = styled.p`
   font-style: normal;
   font-weight: 600;
@@ -96,15 +103,18 @@ export const StyledLine = styled.hr`
   opacity: 0.6;
   background-color: rgba(0, 0, 0, 0.1);
 `;
+
 export const IdentifyText = styled.span`
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
 `;
+
 export const Row = styled.div`
   display: flex;
   justify-content: space-between;
 `;
+
 export const DocumentContainer = styled.div`
   margin-top: 20px;
 `;
@@ -113,6 +123,11 @@ export const DivDifference = styled.div`
 `;
 export const DivFooterButton = styled.div`
   margin-top: 20px;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  padding-bottom: 22px;
 `;
 export const DivVerificationCardStyled = styled.div`
   display: flex;
@@ -120,12 +135,14 @@ export const DivVerificationCardStyled = styled.div`
   justify-content: center;
   margin-bottom: 15px;
 `;
+
 export const DivVerificationGoogleStyled = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 28px;
 `;
+
 export const StyledSpan = styled.span`
   background: linear-gradient(90deg, ${COLORS.FAUX_CHINESE_BLUE} 0%, ${COLORS.SKY_100} 85%);
   -webkit-background-clip: text;
@@ -135,6 +152,7 @@ export const StyledSpan = styled.span`
   font-weight: 600;
   font-size: 16px;
 `;
+
 export const DivButtons = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 85px);
@@ -144,12 +162,14 @@ export const DivButtons = styled.div`
   justify-content: center;
   margin-left: 20px;
   margin-right: 20px;
+
   @media (max-width: 400px) {
     grid-template-columns: repeat(3, 100px);
     column-gap: 10px;
     row-gap: 10px;
   }
 `;
+
 export const SpanParagraph = styled.div`
   display: flex;
   flex-direction: row;

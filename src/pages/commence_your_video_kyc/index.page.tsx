@@ -53,9 +53,9 @@ const CommenceYourVideoKYC = () => {
       </div>
 
       <FooterButtonStyle>
-        <div className="button-container">
-          <Button onClick={handelProceed}>{t('proceed')}</Button>
-        </div>
+        <Button onClick={handelProceed} className="m-auto">
+          {t('proceed')}
+        </Button>
       </FooterButtonStyle>
     </DivMain>
   );

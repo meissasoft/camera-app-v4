@@ -1,11 +1,13 @@
 import styled from '@emotion/styled';
 
 export const DivMain = styled.div`
-  padding: 20px;
+  margin: 20px 20px 0px 20px;
+  height: calc(100vh - 20px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  -webkit-animation: fadeInUp 500ms ease-in-out; /* Chrome, Safari, Opera */
+  animation: fadeInUp 500ms ease-in-out;
   .button-container {
     width: 100%;
     margin-top: 48px;
@@ -39,7 +41,12 @@ export const DivForm = styled.div`
   text-align: center;
 `;
 export const FooterButtonStyle = styled.div`
-  margin-top: 2%;
+  margin-top: 20px;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  padding-bottom: 22px;
 `;
 export const YesButtonStyle = styled.p`
   font-style: normal;

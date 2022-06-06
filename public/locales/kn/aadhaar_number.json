@@ -2,7 +2,7 @@
   "aadhaar_number": "ಆಧಾರ್ ಸಂಖ್ಯೆ",
   "enter_your_12_digit_aadhaar_number_to_begin": "ಪ್ರಾರಂಭಿಸಲು ನಿಮ್ಮ 12 ಅಂಕಿಯ ಆಧಾರ್ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
   "aadhaar_number*": "ಆಧಾರ್ ಸಂಖ್ಯೆ*",
-  "enter_security_code*": "ಭದ್ರತಾ ಕೋಡ್ ನಮೂದಿಸಿ*",
+  "enter_security_code": "ಭದ್ರತಾ ಕೋಡ್ ನಮೂದಿಸಿ*",
   "type_the_character_you_see_in_the_picture": "ಚಿತ್ರದಲ್ಲಿ ನೀವು ನೋಡುವ ಅಕ್ಷರವನ್ನು ಟೈಪ್ ಮಾಡಿ",
   "send_otp": "OTP ಕಳುಹಿಸಿ"
 }

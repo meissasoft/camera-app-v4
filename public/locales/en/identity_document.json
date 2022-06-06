@@ -5,9 +5,5 @@
   "adhaar_card": "Adhaar Card",
   "passport": "Passport",
   "licence": "Driving Licence",
-  "voter_id": "Voter ID",
-  "video_kyc_would_like_to_access_the_camera": "“Video KYC” Would Like to Access the Camera",
-  "required_for_document_and_facial_capture": "Required for document and facial capture",
-  "don't_allow": "Don't allow",
-  "ok": "OK"
+  "voter_id": "Voter ID"
 }

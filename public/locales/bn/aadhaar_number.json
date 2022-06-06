@@ -2,7 +2,7 @@
   "aadhaar_number": "আধার নম্বর",
   "enter_your_12_digit_aadhaar_number_to_begin": "শুরু করতে আপনার 12 সংখ্যার আধার নম্বর লিখুন",
   "aadhaar_number*": "আধার নম্বর*",
-  "enter_security_code*": "সুরক্ষা নাম্বারটি প্রবেশ করুন*",
+  "enter_security_code": "সুরক্ষা নাম্বারটি প্রবেশ করুন*",
   "type_the_character_you_see_in_the_picture": "আপনি ছবিতে যে অক্ষরটি দেখছেন তা টাইপ করুন",
   "send_otp": "OTP পাঠান"
 }

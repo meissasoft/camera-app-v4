@@ -2,10 +2,18 @@
   "identity_verification": "Identity Verification",
   "verify_your_identity": "Verify your identity",
   "it_will_take_less_than_2_minutes": "It will take less than 2 minutes",
-  "step1": "Step 1",
-  "identity_document_verification": "Identity document verification",
+  "step1": "Step-1",
+  "pan_card_verification": "PAN card verification",
   "take_a_picture_of_an_identity_document_and_upload_it_for_verification": "Take a picture of an identity document and upload it for verification",
-  "step2": "Step 2",
-  "record_a_selfie_video": "Record a selfie video",
-  "speak_out_load_and_move_your_head_finish_actions_in_25_seconds": "Speak out load and move your head, Finish actions in 25 seconds."
+  "step2": "Step-2",
+  "live_photo_check": "Live photo check",
+  "speak_out_load_and_move_your_head_finish_actions_in_25_seconds.": "Speak out load and move your head, Finish actions in 25 seconds.",
+  "step3": "Step-3",
+  "vcip": "VCIP",
+  "schedule_a_video_call_session_with_our_agent_and_follow_the_instructions.": "Schedule a video call session with our agent and follow the instructions",
+  "video_kyc_would_like_to_access_the_camera": "“Video KYC” Would Like to Access the Camera",
+  "required_for_document_and_facial_capture": "Required for document and facial capture",
+  "don't_allow": "Don't allow",
+  "ok": "OK"
+
 }

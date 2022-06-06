@@ -3,9 +3,17 @@
   "verify_your_identity": "તમારી ઓળખ ચકાસો",
   "it_will_take_less_than_2_minutes": "તે 2 મિનિટથી ઓછો સમય લેશે",
   "step1": "પગલું 1",
-  "identity_document_verification": "ઓળખ દસ્તાવેજની ચકાસણી",
+  "pan_card_verification": "પાન કાર્ડ વેરિફિકેશન",
   "take_a_picture_of_an_identity_document_and_upload_it_for_verification": "ઓળખ દસ્તાવેજની તસવીર લો અને તેને વેરિફિકેશન માટે અપલોડ કરો",
   "step2": "પગલું 2",
-  "record_a_selfie_video": "સેલ્ફી વીડિયો રેકોર્ડ કરો",
-  "speak_out_load_and_move_your_head_finish_actions_in_25_seconds": "લોડ બોલો અને તમારું માથું ખસેડો, 25 સેકન્ડમાં ક્રિયાઓ પૂર્ણ કરો."
+  "live_photo_check": "લાઈવ ફોટો ચેક",
+  "speak_out_load_and_move_your_head_finish_actions_in_25_seconds.": "લોડ બોલો અને તમારું માથું ખસેડો, 25 સેકન્ડમાં ક્રિયાઓ પૂર્ણ કરો.",
+  "step3": "પગલું 3",
+  "vcip": "VCIP",
+  "schedule_a_video_call_session_with_our_agent_and_follow_the_instructions.": "અમારા એજન્ટ સાથે વિડિયો કૉલ સત્ર શેડ્યૂલ કરો અને અનુસરો સૂચનાઓ",
+
+  "video_kyc_would_like_to_access_the_camera": "\"વિડિયો કેવાયસી\" કેમેરાને ઍક્સેસ કરવા માંગે છે",
+  "required_for_document_and_facial_capture": "દસ્તાવેજ અને ચહેરાના કેપ્ચર માટે જરૂરી છે",
+  "don't_allow": "મંજૂરી આપશો નહીં",
+  "ok": "ઓહ"
 }

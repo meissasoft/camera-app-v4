@@ -119,11 +119,9 @@ const FillTheForm = () => {
       </div>
 
       <FooterButtonStyle>
-        <div className="button-container">
-          <Button className="m-auto" onClick={onClickHandler}>
-            {t('get_kyc')}
-          </Button>
-        </div>
+        <Button className="m-auto" onClick={onClickHandler}>
+          {t('get_kyc')}
+        </Button>
       </FooterButtonStyle>
     </DivMain>
   );

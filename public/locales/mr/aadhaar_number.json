@@ -2,7 +2,7 @@
   "aadhaar_number": "आधार क्रमांक",
   "enter_your_12_digit_aadhaar_number_to_begin": "सुरू करण्यासाठी तुमचा 12 अंकी आधार क्रमांक टाका",
   "aadhaar_number*": "आधार क्रमांक*",
-  "enter_security_code*": "सुरक्षा कोड प्रविष्ट करा*",
+  "enter_security_code": "सुरक्षा कोड प्रविष्ट करा*",
   "type_the_character_you_see_in_the_picture": "चित्रात दिसत असलेले अक्षर टाइप करा",
   "send_otp": "OTP पाठवा"
 }

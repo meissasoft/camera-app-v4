@@ -1,11 +1,16 @@
 import router from 'next/router';
+
 import React, { useState } from 'react';
+
 import { useTranslation } from 'next-i18next';
+
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Header from '@/components/core/Header';
 import Button from '@/components/core/Button';
+
 import { CardIcon } from '@/assets/svg/card-icon2';
 import { GoogleIcon } from '@/assets/svg/google-1';
+
 import {
   DivFooterButton,
   DivButtons,
@@ -23,10 +28,12 @@ import {
   BoldText,
   LightText,
 } from './index.style';
+
 /**
  *
  * @returns KeepThingsHandy page
  */
+
 const KeepThingsHandy = () => {
   const { t } = useTranslation('keep_things_handy');
   const [languages, setLanguages] = useState<{ name: string; selected: boolean }[]>([
@@ -59,12 +66,15 @@ const KeepThingsHandy = () => {
       selected: false,
     },
   ]);
+
   const onClickHeaderIcon = () => {
-    router.push('/download_successfully');
+    router.push('/downloaded_data');
   };
+
   const handleStart = () => {
     router.push('/token_number');
   };
+
   const onClickLangugae = (index: number) => {
     const temp = [...languages];
     temp.forEach((language) => {
@@ -73,6 +83,7 @@ const KeepThingsHandy = () => {
     temp[index].selected = true;
     setLanguages(temp);
   };
+
   return (
     <DivMain>
       <div>
@@ -125,9 +136,11 @@ const KeepThingsHandy = () => {
     </DivMain>
   );
 };
+
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
   props: {
     ...(await serverSideTranslations(locale, ['keep_things_handy'])),
   },
 });
+
 export default KeepThingsHandy;

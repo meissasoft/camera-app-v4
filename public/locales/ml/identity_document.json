@@ -5,9 +5,5 @@
   "adhaar_card": "ആധാർ കാർഡ്",
   "passport": "പാസ്പോർട്ട്",
   "licence": "ഡ്രൈവർ ലൈസൻസ്",
-  "voter_id": "വോട്ടർ ഐഡി",
-  "video_kyc_would_like_to_access_the_camera": "\"വീഡിയോ KYC\" ക്യാമറ ആക്സസ് ചെയ്യാൻ ആഗ്രഹിക്കുന്നു",
-  "required_for_document_and_facial_capture": "ഡോക്യുമെന്റിനും ഫേഷ്യൽ ക്യാപ്‌ചറിനും ആവശ്യമാണ്",
-  "don't_allow": "അനുവദിക്കരുത്",
-  "ok": "ഓ"
+  "voter_id": "വോട്ടർ ഐഡി"
 }

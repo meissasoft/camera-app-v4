@@ -3,9 +3,16 @@
   "verify_your_identity": "তোমার পরিচিতি নিশ্চিত কর",
   "it_will_take_less_than_2_minutes": "এটি 2 মিনিটেরও কম সময় নেবে",
   "step1": "ধাপ 1",
-  "identity_document_verification": "পরিচয় নথি যাচাইকরণ",
-  "take_a_picture_of_an_identity_document_and_upload_it_for_verification": "একটি পরিচয় নথির একটি ছবি নিন এবং যাচাইয়ের জন্য এটি আপলোড করুন",
+  "pan_card_verification": "প্যান কার্ড যাচাইকরণ",
+  "take_a_picture_of_an_identity_document_and_upload_it_for_verification": "একটি পরিচয় নথি একটি ছবি নিন এবং যাচাইয়ের জন্য আপলোড করুন",
   "step2": "ধাপ ২",
-  "record_a_selfie_video": "একটি সেলফি ভিডিও রেকর্ড করুন",
-  "speak_out_load_and_move_your_head_finish_actions_in_25_seconds": "কথা বলুন এবং আপনার মাথা সরান, 25 সেকেন্ডের মধ্যে কাজ শেষ করুন।"
+  "live_photo_check": "লাইভ ফটো চেক",
+  "speak_out_load_and_move_your_head_finish_actions_in_25_seconds.": "কথা বলুন এবং আপনার মাথা সরান,25 সেকেন্ডের মধ্যে কাজ শেষ করুন।.",
+  "step3": "ধাপ 3",
+  "vcip": "ভিসিআইপি",
+  "schedule_a_video_call_session_with_our_agent_and_follow_the_instructions.": "আমাদের সাথে একটি ভিডিও কল সেশন নির্ধারণ করুন এজেন্ট এবং নির্দেশাবলী অনুসরণ করুন",
+  "video_kyc_would_like_to_access_the_camera": "\"ভিডিও KYC\" ক্যামেরা অ্যাক্সেস করতে চায়৷",
+  "required_for_document_and_facial_capture": "নথি এবং মুখের ক্যাপচারের জন্য প্রয়োজনীয়",
+  "don't_allow": "অনুমতি দেবেন না",
+  "ok": "ঠিক আছে"
 }

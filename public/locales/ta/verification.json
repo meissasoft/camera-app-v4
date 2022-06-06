@@ -2,10 +2,17 @@
   "identity_verification": "அடையாள சரிபார்ப்பு",
   "verify_your_identity": "உங்கள் அடையாளத்தை சரிபார்க்க",
   "it_will_take_less_than_2_minutes": "இதற்கு 2 நிமிடங்களுக்கும் குறைவாகவே ஆகும்",
-  "step1": "படி 1",
-  "identity_document_verification": "அடையாள ஆவண சரிபார்ப்பு",
+    "step1": "படி 1",
+  "pan_card_verification": "பான் கார்டு சரிபார்ப்பு",
   "take_a_picture_of_an_identity_document_and_upload_it_for_verification": "அடையாள ஆவணத்தின் படத்தை எடுத்து சரிபார்ப்பிற்காக பதிவேற்றவும்",
   "step2": "படி 2",
-  "record_a_selfie_video": "செல்ஃபி வீடியோவை பதிவு செய்யுங்கள்",
-  "speak_out_load_and_move_your_head_finish_actions_in_25_seconds": "சுமைகளை வெளிப்படுத்தி உங்கள் தலையை நகர்த்தவும், செயல்களை 25 வினாடிகளில் முடிக்கவும்."
+  "live_photo_check": "நேரடி புகைப்பட சரிபார்ப்பு",
+  "speak_out_load_and_move_your_head_finish_actions_in_25_seconds.": "சுமைகளை வெளிப்படுத்தி உங்கள் தலையை நகர்த்தவும், செயல்களை 25 வினாடிகளில் முடிக்கவும்.",
+  "step3": "படி-3",
+  "vcip": "விசிஐபி",
+  "schedule_a_video_call_session_with_our_agent_and_follow_the_instructions.": "எங்கள் முகவருடன் வீடியோ அழைப்பு அமர்வைத் திட்டமிட்டு பின்தொடரவும் அறிவுறுத்தல்கள்",
+  "video_kyc_would_like_to_access_the_camera": "\"வீடியோ KYC\" கேமராவை அணுக விரும்புகிறது",
+  "required_for_document_and_facial_capture": "ஆவணம் மற்றும் முகப் பிடிப்புக்குத் தேவை",
+  "don't_allow": "அனுமதிக்காதே",
+  "ok": "ஓ"
 }

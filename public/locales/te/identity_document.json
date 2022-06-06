@@ -5,9 +5,5 @@
   "adhaar_card": "ఆధార్ కార్డ్",
   "passport": "పాస్పోర్ట్",
   "licence": "డ్రైవర్ లైసెన్స్",
-  "voter_id": "ఓటరు ID",
-  "video_kyc_would_like_to_access_the_camera": "“వీడియో KYC” కెమెరాను యాక్సెస్ చేయాలనుకుంటోంది",
-  "required_for_document_and_facial_capture": "డాక్యుమెంట్ మరియు ఫేషియల్ క్యాప్చర్ కోసం అవసరం",
-  "don't_allow": "అనుమతించవద్దు",
-  "ok": "ఓహ్"
+  "voter_id": "ఓటరు ID"
 }

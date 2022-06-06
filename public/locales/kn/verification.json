@@ -3,9 +3,16 @@
   "verify_your_identity": "ನಿಮ್ಮ ಗುರುತನ್ನು ಪರಿಶೀಲಿಸಿ",
   "it_will_take_less_than_2_minutes": "ಇದು 2 ನಿಮಿಷಗಳಿಗಿಂತ ಕಡಿಮೆ ಸಮಯ ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ",
   "step1": "ಹಂತ 1",
-  "identity_document_verification": "ಗುರುತಿನ ದಾಖಲೆ ಪರಿಶೀಲನೆ",
+  "pan_card_verification": "PAN ಕಾರ್ಡ್ ಪರಿಶೀಲನೆ",
   "take_a_picture_of_an_identity_document_and_upload_it_for_verification": "ಗುರುತಿನ ದಾಖಲೆಯ ಚಿತ್ರವನ್ನು ತೆಗೆದುಕೊಂಡು ಅದನ್ನು ಪರಿಶೀಲನೆಗಾಗಿ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
   "step2": "ಹಂತ 2",
-  "record_a_selfie_video": "ಸೆಲ್ಫಿ ವಿಡಿಯೋ ರೆಕಾರ್ಡ್ ಮಾಡಿ",
-  "speak_out_load_and_move_your_head_finish_actions_in_25_seconds": "ಲೋಡ್ ಮಾಡಿ ಮತ್ತು ನಿಮ್ಮ ತಲೆಯನ್ನು ಸರಿಸಿ, 25 ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಕ್ರಿಯೆಗಳನ್ನು ಮುಗಿಸಿ."
+  "live_photo_check": "ಲೈವ್ ಫೋಟೋ ಪರಿಶೀಲನೆ",
+  "speak_out_load_and_move_your_head_finish_actions_in_25_seconds.": "ಲೋಡ್ ಮಾಡಿ ಮತ್ತು ನಿಮ್ಮ ತಲೆಯನ್ನು ಸರಿಸಿ, 25 ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಕ್ರಿಯೆಗಳನ್ನು ಮುಗಿಸಿ.",
+  "step3": "ಹಂತ-3",
+  "vcip": "ವಿಸಿಐಪಿ",
+  "schedule_a_video_call_session_with_our_agent_and_follow_the_instructions.": "ನಮ್ಮ ಏಜೆಂಟ್‌ನೊಂದಿಗೆ ವೀಡಿಯೊ ಕರೆ ಸೆಶನ್ ಅನ್ನು ನಿಗದಿಪಡಿಸಿ ಮತ್ತು ಅನುಸರಿಸಿ ಸೂಚನೆಗಳು",
+  "video_kyc_would_like_to_access_the_camera": "\"ವೀಡಿಯೊ KYC\" ಕ್ಯಾಮೆರಾವನ್ನು ಪ್ರವೇಶಿಸಲು ಬಯಸುತ್ತದೆ",
+  "required_for_document_and_facial_capture": "ಡಾಕ್ಯುಮೆಂಟ್ ಮತ್ತು ಮುಖದ ಸೆರೆಹಿಡಿಯುವಿಕೆಗೆ ಅಗತ್ಯವಿದೆ",
+  "don't_allow": "ಅನುಮತಿಸಬೇಡ",
+  "ok": "ಓಹ್"
 }

@@ -5,10 +5,6 @@
   "adhaar_card": "આધાર કાર્ડ",
   "passport": "પાસપોર્ટ",
   "licence": "ડ્રાઈવર લાયન્સન્સ",
-  "voter_id": "મતદાર આઈડી",
-  "video_kyc_would_like_to_access_the_camera": "\"વિડિયો કેવાયસી\" કેમેરાને ઍક્સેસ કરવા માંગે છે",
-  "required_for_document_and_facial_capture": "દસ્તાવેજ અને ચહેરાના કેપ્ચર માટે જરૂરી છે",
-  "don't_allow": "મંજૂરી આપશો નહીં",
-  "ok": "ઓહ"
+  "voter_id": "મતદાર આઈડી"
 }
 

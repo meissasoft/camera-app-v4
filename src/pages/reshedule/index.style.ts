@@ -1,23 +1,22 @@
 import styled from '@emotion/styled';
 import { COLORS } from '@/constants/colors';
+
 export const DivMain = styled.div`
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
+  height: calc(100vh - 20px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(100vh - 50px);
-  @media (max-height: 720px) {
-    height: calc(100vh - 70px);
-  }
-  @media (max-height: 670px) {
-    height: calc(100vh - 40px);
-  }
+  -webkit-animation: fadeInUp 500ms ease-in-out; /* Chrome, Safari, Opera */
+  animation: fadeInUp 500ms ease-in-out;
 `;
+
 export const DescriptionDiv = styled.div`
   margin-top: 5px;
   display: inline;
   flex-direction: row;
 `;
+
 export const LightText = styled.span`
   font-style: normal;
   font-weight: 400;
@@ -27,6 +26,7 @@ export const LightText = styled.span`
   color: ${COLORS.GREY_12};
   opacity: 0.6;
 `;
+
 export const BoldText = styled.span`
   font-weight: 600;
   margin-top: 5px;
@@ -37,9 +37,11 @@ export const BoldText = styled.span`
   color: ${COLORS.BLACK_HEAVY} !important;
   opacity: 10 !important;
 `;
+
 export const Divider = styled.hr`
   color: rgba(0, 0, 0, 0.7);
 `;
+
 export const CalendarDiv = styled.div`
   border: 1px;
   display: flex;
@@ -56,6 +58,7 @@ export const CalendarDiv = styled.div`
     line-height: 1.125em;
     font-size: 16px;
   }
+
   .react-calendar__month-view__days__day--neighboringMonth {
     opacity: 0.4;
     font-size: 16px;
@@ -86,17 +89,20 @@ export const CalendarDiv = styled.div`
   .react-calendar__navigation button[disabled] {
     background-color: none;
   }
+
   abbr[title] {
     text-decoration: none;
   }
   .react-calendar__month-view__days__day--weekend {
     color: ${COLORS.BLACK_100};
   }
+
   .react-calendar__month-view__days__day--weekend[disabled] {
     color: rgba(16, 16, 16, 0.3) !important;
     /* flex: 0 0 10.2857% !important; */
     /* flex: 0 0 10.2857% !important; */
   }
+
   .react-calendar__tile:enabled:hover,
   .react-calendar__tile:enabled:focus {
     background: ${COLORS.ATHEN_GREY};
@@ -127,15 +133,18 @@ export const CalendarDiv = styled.div`
     font-weight: bold;
     color: white;
   }
+
   .react-calendar__tile:disabled[disabled] {
     background-color: white;
   }
+
   .react-calendar__month-view__weekdays {
     text-align: center;
     text-transform: unset;
     font-weight: bold;
     font-size: 14px;
   }
+
   .react-calendar__tile--active:enabled:hover,
   .react-calendar__tile--active:enabled:focus {
     background: linear-gradient(90.81deg, ${COLORS.FAUX_CHINESE_BLUE} 10%, ${COLORS.SKY_100} 75.3%);
@@ -145,6 +154,7 @@ export const CalendarDiv = styled.div`
   .react-calendar--selectRange .react-calendar__tile--hover {
     background-color: ${COLORS.ALTO_GREY};
   }
+
   .react-calendar__tile--range {
     background: ${COLORS.WHITE_100};
     color: ${COLORS.BLACK_100};
@@ -173,6 +183,7 @@ export const CalendarDiv = styled.div`
     opacity: 0.6;
   }
 `;
+
 export const DefaultOptionDiv = styled.div`
   display: flex;
   justify-content: space-between;
@@ -189,6 +200,7 @@ export const DefaultOptionDiv = styled.div`
     opacity: 0.6;
   }
 `;
+
 export const OptionsListDiv = styled.div`
   display: flex;
   flex-direction: column;
@@ -197,21 +209,20 @@ export const OptionsListDiv = styled.div`
   border-radius: 5px;
   padding: 0px 10px;
   background: ${COLORS.WHITE_200};
-  /* border: 1px solid ${COLORS.GREY_50}; */
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.09);
   border-radius: 5px;
   position: absolute;
   width: 100%;
+  z-index: 999;
 `;
+
 export const SingleOptionDiv = styled.div`
   border-bottom: 1.2px solid rgba(0, 0, 0, 0.2);
-  padding: 20px 20px;
+  padding: 14px 10px;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
   opacity: 0.8;
   .planeSpan {
     font-weight: 600;
@@ -233,10 +244,16 @@ export const SingleOptionDiv = styled.div`
     border-bottom: none;
   }
 `;
+
 export const CustomDropDown = styled.div`
   position: relative;
 `;
+
 export const DivFooterButton = styled.div`
   margin-top: 20px;
   width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  padding-bottom: 22px;
 `;

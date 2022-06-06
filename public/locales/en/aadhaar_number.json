@@ -2,7 +2,7 @@
   "aadhaar_number": "Aadhaar number",
   "enter_your_12_digit_aadhaar_number_to_begin": "Enter your 12 digit Aadhaar number to begin",
   "aadhaar_number*": "Aadhaar number*",
-  "enter_security_code*": "Enter Security Code*",
+  "enter_security_code": "Enter Security Code*",
   "type_the_character_you_see_in_the_picture": "Type the character you see in the picture",
   "send_otp": "Send OTP"
 }
